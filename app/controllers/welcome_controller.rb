@@ -13,6 +13,7 @@ class WelcomeController < ApplicationController
     @message = Message.create(email: params[:email], name: params[:name], content: params[:message])
     if @message.save
       flash[:notice] = "Thanks for the message!"
+      ContactMailer.contact_email(@message.name, @message.email, @message.content).deliver_now
       redirect_to '/'
     end
   end
