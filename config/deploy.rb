@@ -3,7 +3,6 @@ lock '3.4.0'
 
 set :application, 'schapendoes'
 set :repo_url, 'git@github.com:Crazyglue/schapendoes.git' # Edit this to match your repository
-set :branch, :deployment
 set :deploy_to, '/home/deploy/schapendoes'
 set :pty, true
 set :linked_files, %w{config/database.yml config/application.yml}
