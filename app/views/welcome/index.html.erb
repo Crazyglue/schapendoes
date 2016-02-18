@@ -6,7 +6,6 @@
 -->
 <html>
 	<head>
-		<title>Retrospect by TEMPLATED</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
@@ -14,7 +13,7 @@
 
 		<!-- Header -->
 			<header id="header" class="alt">
-				<h1><a href="index.html">Retrospect</a></h1>
+				<h1><a href="index.html">Schapendoes USA</a></h1>
 				<a href="#nav">Menu</a>
 			</header>
 
@@ -29,7 +28,7 @@
 
 		<!-- Banner -->
 			<section id="banner">
-				<i class="icon fa-diamond"></i>
+				<i class="icon fa-heart-o"></i>
 				<h2>Etiam adipiscing</h2>
 				<p>Magna feugiat lorem dolor egestas</p>
 				<ul class="actions">
@@ -41,9 +40,9 @@
 			<section id="one" class="wrapper style1">
 				<div class="inner">
 					<article class="feature left">
-						<span class="image"><%= image_tag("livingroom2.jpg") %></span>
+						<span class="image"><%= link_to image_tag("thumbnails/livingroom2.jpg"), asset_path("livingroom2.jpg") %></span>
 						<div class="content">
-							<h2>Integer vitae libero acrisus egestas placerat  sollicitudin</h2>
+							<h2>Check out our cute puppies!</h2>
 							<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
 							<ul class="actions">
 								<li>
@@ -53,7 +52,7 @@
 						</div>
 					</article>
 					<article class="feature right">
-						<span class="image"><%= image_tag("yard3.jpg") %></span>
+						<span class="image"><%= link_to image_tag("thumbnails/yard3.jpg"), asset_path("yard3.jpg") %></span>
 						<div class="content">
 							<h2>Integer vitae libero acrisus egestas placerat  sollicitudin</h2>
 							<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
@@ -75,14 +74,14 @@
 						<p>Ipsum dolor tempus commodo turpis adipiscing Tempor placerat sed amet accumsan</p>
 					</header>
 					<div class="image-grid">
-						<a href="#" class="image"><%= image_tag("thumbnails/puppy1.JPG") %></a>
-						<a href="#" class="image"><%= image_tag("thumbnails/puppy2.JPG") %></a>
-						<a href="#" class="image"><%= image_tag("thumbnails/puppy3.JPG") %></a>
-						<a href="#" class="image"><%= image_tag("thumbnails/puppy4.JPG") %></a>
-						<a href="#" class="image"><%= image_tag("thumbnails/puppy5.JPG") %></a>
-						<a href="#" class="image"><%= image_tag("thumbnails/puppy6.JPG") %></a>
-						<a href="#" class="image"><%= image_tag("thumbnails/puppy8.jpg") %></a>
-						<a href="#" class="image"><%= image_tag("thumbnails/yard2.jpg") %></a>
+						<%= link_to image_tag("thumbnails/puppy1.JPG"), asset_path("puppy1.JPG"), class: "image" %>
+						<%= link_to image_tag("thumbnails/puppy2.JPG"), asset_path("puppy2.JPG"), class: "image" %>
+						<%= link_to image_tag("thumbnails/puppy3.JPG"), asset_path("puppy3.JPG"), class: "image" %>
+						<%= link_to image_tag("thumbnails/puppy4.JPG"), asset_path("puppy4.JPG"), class: "image" %>
+						<%= link_to image_tag("thumbnails/puppy5.JPG"), asset_path("puppy5.JPG"), class: "image" %>
+						<%= link_to image_tag("thumbnails/puppy6.JPG"), asset_path("puppy6.JPG"), class: "image" %>
+						<%= link_to image_tag("thumbnails/puppy8.jpg"), asset_path("puppy8.JPG"), class: "image" %>
+						<%= link_to image_tag("thumbnails/yard2.jpg"), asset_path("yard2.jpg"), class: "image" %>
 					</div>
 					<ul class="actions">
 						<li><a href="#" class="button big alt">Tempus Aliquam</a></li>
