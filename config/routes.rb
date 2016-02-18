@@ -6,6 +6,11 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   resources :welcome, only: [:index, :create]
+  resources :dogs
+  resources :achievements
+  resources :rescue
+  resources :breed
+  resources :puppies
 
   post '/send_mail', to: 'welcome#send_mail'
   # Example of regular route:

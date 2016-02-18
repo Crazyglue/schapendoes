@@ -1,10 +1,11 @@
 class ContactMailer < ApplicationMailer
-  default to: "edbz2k2@gmail.com"
+  default to: "schapendoes@comcast.net"
 
-  def contact_email(name, email, content)
+  def contact_email(name, email, content, subject)
     @name = name
     @email = email
     @content = content
+    @subject = subject
 
     mail(from: email, subject: 'Schapendoes.us visitor contact request')
   end

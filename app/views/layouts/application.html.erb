@@ -15,10 +15,81 @@
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
+  <!-- Header -->
+		<header id="header" class="alt">
+			<h1><a href="index.html">Schapendoes USA</a></h1>
+			<a href="#nav">Menu</a>
+		</header>
+
+    <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="/index">Home</a></li>
+          <hr />
+          <li><a href="/breed">About the breed</a></li>
+          <li><a href="/rescue">Rescue</a></li>
+          <li><a href="/puppies">Puppies</a></li>
+          <li><a href="/dogs">Our dogs</a></li>
+          <li><a href="/achievements">Achievements</a></li>
+        </ul>
+      </nav>
 
 <%= yield %>
+
+<!-- Four -->
+  <section id="four" class="wrapper style2 special">
+    <div class="inner">
+      <header class="major narrow">
+        <h2>Get in touch</h2>
+      </header>
+      <form action="welcome#index" method="POST">
+        <div class="container 75%">
+          <div class="row uniform 50%">
+            <div class="6u 12u(xsmall)">
+              <input name="name" placeholder="Name" type="text" />
+            </div>
+            <div class="6u$ 12u$(xsmall)">
+              <input name="email" placeholder="Email" type="email" />
+            </div>
+            <div class="12u$">
+              <textarea name="message" placeholder="Message" rows="4"></textarea>
+            </div>
+          </div>
+        </div>
+        <ul class="actions">
+          <li><input type="submit" class="special" value="Submit" /></li>
+          <li><input type="reset" class="alt" value="Reset" /></li>
+        </ul>
+      </form>
+      <% form_for(@message, url: root_path, method: :post) do |f| %>
+        <div class="container 75%">
+          <div class="row uniform 50%">
+            <div class="6u 12u$(xsmall)">
+              <%= f.text_field :name, placeholder: 'Name' %>
+            </div>
+            <div class="6u 12u$(xsmall)">
+              <%= f.email_field :email, placeholder: 'Email' %>
+            </div>
+            <div class="6u$ 12u$(xsmall)">
+              <%= f.text_field :subject, placeholder: 'Subject' %>
+            </div>
+            <div class="12u$">
+              <%= f.text_area :content, rows: 4, placeholder: 'Message' %>
+            </div>
+          </div>
+        </div>
+        <ul class="actions">
+          <li><%= submit_tag 'Submit', class: "special" %></li>
+          <li><input type="reset" class="alt" value="Reset" /></li>
+        </ul>
+      <% end %>
+    </div>
+  </section>
 
 </body>
 </html>

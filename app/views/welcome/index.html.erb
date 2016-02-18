@@ -1,180 +1,80 @@
-<!DOCTYPE HTML>
-<!--
-	Retrospect by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-	</head>
-	<body class="landing">
+<body class="landing">
+	<!-- Banner -->
+		<section id="banner">
+			<i class="icon fa-heart-o"></i>
+			<h2>Starlight Schapendoes</h2>
+			<p>Rescue | Puppies</p>
+			<ul class="actions">
+				<li><a href="#rescue" class="button big special">Learn More</a></li>
+			</ul>
+		</section>
 
-		<!-- Header -->
-			<header id="header" class="alt">
-				<h1><a href="index.html">Schapendoes USA</a></h1>
-				<a href="#nav">Menu</a>
-			</header>
-
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="index.html">About the breed</a></li>
-					<li><a href="generic.html">Rescue</a></li>
-					<li><a href="elements.html">Puppies</a></li>
-					<li><a href="index.html">Our dogs</a></li>
-					<li><a href="index.html">Achievements</a></li>
-				</ul>
-			</nav>
-
-		<!-- Banner -->
-			<section id="banner">
-				<i class="icon fa-heart-o"></i>
-				<h2>Starlight Schapendoes</h2>
-				<p>Rescue puppies</p>
-				<ul class="actions">
-					<li><a href="#" class="button big special">Learn More</a></li>
-				</ul>
-			</section>
-
-		<!-- One -->
-			<section id="one" class="wrapper style1">
-				<div class="inner">
-					<article class="feature left">
-						<span class="image"><%= link_to image_tag("thumbnails/livingroom2.jpg"), asset_path("livingroom2.jpg") %></span>
-						<div class="content">
-							<h2>Resuce</h2>
-							<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
-							<ul class="actions">
-								<li>
-									<a href="#" class="button alt">More</a>
-								</li>
-							</ul>
-						</div>
-					</article>
-					<article class="feature right">
-						<span class="image"><%= link_to image_tag("thumbnails/yard3.jpg"), asset_path("yard3.jpg") %></span>
-						<div class="content">
-							<h2>Integer vitae libero acrisus egestas placerat  sollicitudin</h2>
-							<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
-							<ul class="actions">
-								<li>
-									<a href="#" class="button alt">More</a>
-								</li>
-							</ul>
-						</div>
-					</article>
-				</div>
-			</section>
-
-		<!-- Two -->
-			<section id="two" class="wrapper special">
-				<div class="inner">
-					<header class="major narrow">
-						<h2>Aliquam Blandit Mauris</h2>
-						<p>Ipsum dolor tempus commodo turpis adipiscing Tempor placerat sed amet accumsan</p>
-					</header>
-					<div class="image-grid">
-						<%= link_to image_tag("thumbnails/puppy1.JPG"), asset_path("puppy1.JPG"), class: "image" %>
-						<%= link_to image_tag("thumbnails/puppy2.JPG"), asset_path("puppy2.JPG"), class: "image" %>
-						<%= link_to image_tag("thumbnails/puppy3.JPG"), asset_path("puppy3.JPG"), class: "image" %>
-						<%= link_to image_tag("thumbnails/puppy4.JPG"), asset_path("puppy4.JPG"), class: "image" %>
-						<%= link_to image_tag("thumbnails/puppy5.JPG"), asset_path("puppy5.JPG"), class: "image" %>
-						<%= link_to image_tag("thumbnails/puppy6.JPG"), asset_path("puppy6.JPG"), class: "image" %>
-						<%= link_to image_tag("thumbnails/puppy8.jpg"), asset_path("puppy8.JPG"), class: "image" %>
-						<%= link_to image_tag("thumbnails/yard2.jpg"), asset_path("yard2.jpg"), class: "image" %>
+	<!-- One -->
+		<section id="rescue" class="wrapper style1">
+			<div class="inner">
+				<article class="feature left">
+					<span class="image"><%= link_to image_tag("thumbnails/boys.jpg"), '/rescue' %></span>
+					<div class="content">
+						<h2>Resuce</h2>
+						<p>We have dogs ready to be rescued.</p>
+						<ul class="actions">
+							<li>
+								<%= link_to "More", '/rescue', class: "button alt" %>
+							</li>
+						</ul>
 					</div>
-					<ul class="actions">
-						<li><a href="#" class="button big alt">Tempus Aliquam</a></li>
-					</ul>
-				</div>
-			</section>
-
-		<!-- Three -->
-			<section id="three" class="wrapper style3 special">
-				<div class="inner">
-					<header class="major narrow	">
-						<h2>Magna sed consequat tempus</h2>
-						<p>Ipsum dolor tempus commodo turpis adipiscing Tempor placerat sed amet accumsan</p>
-					</header>
-					<ul class="actions">
-						<li><a href="#" class="button big alt">Magna feugiat</a></li>
-					</ul>
-				</div>
-			</section>
-
-		<!-- Four -->
-			<section id="four" class="wrapper style2 special">
-				<div class="inner">
-					<header class="major narrow">
-						<h2>Get in touch</h2>
-					</header>
-					<form action="welcome#index" method="POST">
-						<div class="container 75%">
-							<div class="row uniform 50%">
-								<div class="6u 12u$(xsmall)">
-									<input name="name" placeholder="Name" type="text" />
-								</div>
-								<div class="6u$ 12u$(xsmall)">
-									<input name="email" placeholder="Email" type="email" />
-								</div>
-								<div class="12u$">
-									<textarea name="message" placeholder="Message" rows="4"></textarea>
-								</div>
-							</div>
-						</div>
+				</article>
+				<article class="feature right">
+					<span class="image"><%= link_to image_tag("thumbnails/livingroom2.jpg"), '/puppies' %></span>
+					<div class="content">
+						<h2>Puppies</h2>
+						<p>Check out our cute puppies!</p>
 						<ul class="actions">
-							<li><input type="submit" class="special" value="Submit" /></li>
-							<li><input type="reset" class="alt" value="Reset" /></li>
+							<li>
+								<%= link_to "More", '/puppies', class: "button alt" %>
+							</li>
 						</ul>
-					</form>
-					<% form_for(@message, url: root_path, method: :post) do |f| %>
-						<div class="container 75%">
-							<div class="row uniform 50%">
-								<div class="6u 12u$(xsmall)">
-									<%= f.text_field :name, placeholder: 'Name' %>
-								</div>
-								<div class="6u$ 12u$(xsmall)">
-									<%= f.email_field :email, placeholder: 'Email' %>
-								</div>
-								<div class="12u$">
-									<%= f.text_area :content, rows: 4, placeholder: 'Message' %>
-								</div>
-							</div>
-						</div>
-						<ul class="actions">
-							<li><%= submit_tag 'Submit', class: "special" %></li>
-							<li><input type="reset" class="alt" value="Reset" /></li>
-						</ul>
-					<% end %>
-				</div>
-			</section>
+					</div>
+				</article>
+			</div>
+		</section>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="#" class="icon fa-facebook">
-							<span class="label">Facebook</span>
-						</a></li>
-						<li><a href="#" class="icon fa-twitter">
-							<span class="label">Twitter</span>
-						</a></li>
-						<li><a href="#" class="icon fa-instagram">
-							<span class="label">Instagram</span>
-						</a></li>
-						<li><a href="#" class="icon fa-linkedin">
-							<span class="label">LinkedIn</span>
-						</a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled.</li>
-						<li>Images: <a href="http://unsplash.com">Unsplash</a>.</li>
-						<li>Design: <a href="http://templated.co">TEMPLATED</a>.</li>
-					</ul>
+	<!-- Two -->
+		<!-- <section id="two" class="wrapper special">
+			<div class="inner">
+				<header class="major narrow">
+					<h2>Aliquam Blandit Mauris</h2>
+					<p>Ipsum dolor tempus commodo turpis adipiscing Tempor placerat sed amet accumsan</p>
+				</header>
+				<div class="image-grid">
+					<%= link_to image_tag("thumbnails/puppy1.JPG"), asset_path("puppy1.JPG"), class: "image" %>
+					<%= link_to image_tag("thumbnails/puppy2.JPG"), asset_path("puppy2.JPG"), class: "image" %>
+					<%= link_to image_tag("thumbnails/puppy3.JPG"), asset_path("puppy3.JPG"), class: "image" %>
+					<%= link_to image_tag("thumbnails/puppy4.JPG"), asset_path("puppy4.JPG"), class: "image" %>
+					<%= link_to image_tag("thumbnails/puppy5.JPG"), asset_path("puppy5.JPG"), class: "image" %>
+					<%= link_to image_tag("thumbnails/puppy6.JPG"), asset_path("puppy6.JPG"), class: "image" %>
+					<%= link_to image_tag("thumbnails/puppy8.jpg"), asset_path("puppy8.JPG"), class: "image" %>
+					<%= link_to image_tag("thumbnails/yard2.jpg"), asset_path("yard2.jpg"), class: "image" %>
 				</div>
-			</footer>
-	</body>
-</html>
+				<ul class="actions">
+					<li><a href="#" class="button big alt">Tempus Aliquam</a></li>
+				</ul>
+			</div>
+		</section> -->
+
+	<!-- Three -->
+		<section id="three" class="wrapper style3 special">
+			<div class="inner">
+				<header class="major narrow	">
+					<h2>Our dogs</h2>
+					<p>Ipsum dolor tempus commodo turpis adipiscing Tempor placerat sed amet accumsan</p>
+				</header>
+				<ul class="actions">
+					<li><a href="/dogs" class="button big alt">More</a></li>
+				</ul>
+			</div>
+		</section>
+
+	
+
+</body>

@@ -1,0 +1,20 @@
+// Place all the styles related to the puppies controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#puppies {
+  padding: 8em 0 6em 0;
+  background-color: #1E2832;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed;
+  background: asset_url("overlay.png"), asset_url("yard1.jpg");
+  background-size: cover;
+  text-align: center;
+
+  .explanation-text {
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  #button {
+    color: rgba(255, 255, 255, 0.75);
+  }
+}
